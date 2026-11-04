@@ -13,7 +13,7 @@ The zips are **Release assets** of this repository (release tag `assets`), not g
 
 ## How to get them
 
-You normally do not download by hand: `/update-rbxdev-vault` in Claude (or the setup paste from the vault-kit repository) runs `claude-kit/tools/assets-sync.py`, which reads [repos.json](https://raw.githubusercontent.com/romangigliotti123-arch/vault-kit-01/main/repos.json), downloads the zips of every `vault-assets-NN` repository, checks the SHA256 and extracts them into `<vault>/Assets/`. By hand: download a zip from the table, check `sha256sum`, extract into `Assets/` (the zip has one top-level folder named after its type).
+You normally do not download by hand: `/rbx-update` in Claude (or the setup paste from the vault-kit repository) runs `claude-kit/tools/assets-sync.py`, which reads [repos.json](https://raw.githubusercontent.com/romangigliotti123-arch/vault-kit-01/main/repos.json), downloads the zips of every `vault-assets-NN` repository, checks the SHA256 and extracts them into `<vault>/Assets/`. By hand: download a zip from the table, check `sha256sum`, extract into `Assets/` (the zip has one top-level folder named after its type).
 
 Series: vault-assets-01, vault-assets-02. A new repository `vault-assets-NN+1` is created when the newest one passes about 900 MB; `repos.json` lists them all.
 
